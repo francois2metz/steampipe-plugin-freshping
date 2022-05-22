@@ -4,7 +4,7 @@ In Freshping, a Check refers to the specifications configured to monitor an end-
 
 ## Examples
 
-### List checks
+### List all checks
 
 ```sql
 select
@@ -13,4 +13,32 @@ select
   url
 from
   freshping_check;
+```
+
+### List checks in failure
+
+```sql
+select
+  id,
+  name,
+  url,
+  status
+from
+  freshping_check
+where
+  status not in ('AV', 'PS')
+```
+
+### List checks with degraded performance
+
+```sql
+select
+  id,
+  name,
+  url,
+  status
+from
+  freshping_check
+where
+  performance_status='DP'
 ```
