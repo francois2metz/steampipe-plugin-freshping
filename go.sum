@@ -95,8 +95,8 @@ github.com/hashicorp/yamux v0.0.0-20180604194846-3520598351bb h1:b5rjCoWHc7eqmAS
 github.com/hashicorp/yamux v0.0.0-20180604194846-3520598351bb/go.mod h1:+NfK9FKeTrX5uv1uIXGdwYDTeHna2qgaIlx54MXqjAM=
 github.com/iancoleman/strcase v0.2.0 h1:05I4QRnGpI0m37iZQRuskXh+w77mr6Z41lwQzuHLwW0=
 github.com/iancoleman/strcase v0.2.0/go.mod h1:iwCmte+B7n89clKwxIoIXy/HfoL7AsD47ZCWhYzw7ho=
-github.com/imroc/req/v3 v3.9.3 h1:t8ElkE8R/fVomjXbgrKDXvc4DY6lSN6HHg04cOET7Kc=
-github.com/imroc/req/v3 v3.9.3/go.mod h1:3JIicOKEDHfCSYYNLb/ObZNpx64EV5y40VlHMwhUCzU=
+github.com/imroc/req/v3 v3.11.3 h1:3KmVX29c2fdF9XcRZ95/7fymisG/EXcUE7IwE6u4sNk=
+github.com/imroc/req/v3 v3.11.3/go.mod h1:G6fkq27P+JcTcgRVxecxY+amHN1xFl8W81eLCfJ151M=
 github.com/jhump/protoreflect v1.6.0 h1:h5jfMVslIg6l29nsMs0D8Wj17RDVdNYti0vDN/PZZoE=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=

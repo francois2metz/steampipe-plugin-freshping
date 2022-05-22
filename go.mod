@@ -3,7 +3,7 @@ module github.com/francois2metz/steampipe-plugin-freshping
 go 1.18
 
 require (
-	github.com/imroc/req/v3 v3.9.3
+	github.com/imroc/req/v3 v3.11.3
 	github.com/turbot/steampipe-plugin-sdk/v3 v3.2.0
 )
 
