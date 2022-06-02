@@ -18,10 +18,6 @@ func connect(ctx context.Context, d *plugin.QueryData) (*freshping.Client, error
 
 	freshpingConfig := GetConfig(d.Connection)
 
-	if &freshpingConfig == nil {
-		return nil, errors.New("You must have a freshping config file")
-	}
-
 	key := os.Getenv("FRESHPING_KEY")
 	subdomain := os.Getenv("FRESHPING_SUBDOMAIN")
 

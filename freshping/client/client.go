@@ -69,11 +69,14 @@ func (c *Client) GetChecks() ([]Check, error) {
 	}
 
 	if !res.IsSuccess() {
-		return nil, fmt.Errorf("error retrieving checks: %d", res.Status)
+		return nil, fmt.Errorf("error retrieving checks: %q", res.Status)
 	}
 	var response CheckListResponse
 
-	res.UnmarshalJson(&response)
+	err = res.UnmarshalJson(&response)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling JSON: %q", err)
+	}
 
 	return response.Results, nil
 }
@@ -86,11 +89,14 @@ func (c *Client) GetCheck(id int64) (*Check, error) {
 	}
 
 	if !res.IsSuccess() {
-		return nil, fmt.Errorf("error retrieving check: %d", res.Status)
+		return nil, fmt.Errorf("error retrieving check: %q", res.Status)
 	}
 	var check Check
 
-	res.UnmarshalJson(&check)
+	err = res.UnmarshalJson(&check)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling JSON: %q", err)
+	}
 
 	return &check, nil
 }
@@ -103,11 +109,14 @@ func (c *Client) GetUsers() ([]User, error) {
 	}
 
 	if !res.IsSuccess() {
-		return nil, fmt.Errorf("error retrieving users: %d", res.Status)
+		return nil, fmt.Errorf("error retrieving users: %q", res.Status)
 	}
 	var response UserListResponse
 
-	res.UnmarshalJson(&response)
+	err = res.UnmarshalJson(&response)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling JSON: %q", err)
+	}
 
 	return response.Users, nil
 }
