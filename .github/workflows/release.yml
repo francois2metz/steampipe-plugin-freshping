@@ -1,5 +1,3 @@
-# This workflow will build a steampipe plugin image and publish it to GitHub Packages
-
 name: Build and Deploy OCI Image
 
 on:
