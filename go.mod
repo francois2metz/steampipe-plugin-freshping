@@ -3,7 +3,7 @@ module github.com/francois2metz/steampipe-plugin-freshping
 go 1.18
 
 require (
-	github.com/imroc/req/v3 v3.11.3
+	github.com/imroc/req/v3 v3.13.1
 	github.com/turbot/steampipe-plugin-sdk/v3 v3.2.0
 )
 
@@ -48,5 +48,5 @@ require (
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
 	google.golang.org/grpc v1.46.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
-	gopkg.in/yaml.v2 v2.2.3 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
