@@ -6,7 +6,7 @@ import (
 	"os"
 
 	freshping "github.com/francois2metz/steampipe-plugin-freshping/freshping/client"
-	"github.com/turbot/steampipe-plugin-sdk/v3/plugin"
+	"github.com/turbot/steampipe-plugin-sdk/v4/plugin"
 )
 
 func connect(ctx context.Context, d *plugin.QueryData) (*freshping.Client, error) {
