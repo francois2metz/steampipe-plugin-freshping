@@ -1,6 +1,6 @@
 module github.com/francois2metz/steampipe-plugin-freshping
 
-go 1.18
+go 1.19
 
 require (
 	github.com/imroc/req/v3 v3.13.1
