@@ -9,6 +9,6 @@ connection "freshping" {
     # See https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation#Authentication
     key = "NoalNogitnazud1GranfairkyefAymvu"
 
-    # Your freshping subdomain
+    # Your freshping subdomain (for acme.freshping.io, enter acme)
     subdomain = ""
 }
