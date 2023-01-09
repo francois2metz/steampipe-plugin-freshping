@@ -89,6 +89,16 @@ func tableFreshpingCheck() *plugin.Table {
 				Type:        proto.ColumnType_STRING,
 				Description: "The string to look for eror at the response for tcp/udp check.",
 			},
+			{
+				Name:        "alert_users",
+				Type:        proto.ColumnType_JSON,
+				Description: "The list of users IDs that receive the alert.",
+			},
+			{
+				Name:        "alert_contacts",
+				Type:        proto.ColumnType_JSON,
+				Description: "The list of contacts IDs that receive the alert.",
+			},
 		},
 	}
 }
