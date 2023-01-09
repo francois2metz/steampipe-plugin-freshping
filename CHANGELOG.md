@@ -1,3 +1,9 @@
+## v0.2.1 [2023-01-09]
+
+_What's new?_
+
+- The default configuration token and subdomain are now commented
+
 ## v0.2.0 [2023-01-09]
 
 _What's new?_
