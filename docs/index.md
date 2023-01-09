@@ -64,10 +64,10 @@ connection "freshping" {
     # 2. Go to settings > Account settings
     # 3. Copy API Key
     # See https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation#Authentication
-    key = "NoalNogitnazud1GranfairkyefAymvu"
+    # key = "NoalNogitnazud1GranfairkyefAymvu"
 
     # Your freshping subdomain
-    subdomain = ""
+    # subdomain = ""
 }
 ```
 
