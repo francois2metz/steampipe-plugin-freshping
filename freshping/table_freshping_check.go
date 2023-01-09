@@ -3,8 +3,8 @@ package freshping
 import (
 	"context"
 
-	"github.com/turbot/steampipe-plugin-sdk/v4/grpc/proto"
-	"github.com/turbot/steampipe-plugin-sdk/v4/plugin"
+	"github.com/turbot/steampipe-plugin-sdk/v5/grpc/proto"
+	"github.com/turbot/steampipe-plugin-sdk/v5/plugin"
 )
 
 func tableFreshpingCheck() *plugin.Table {
@@ -116,7 +116,7 @@ func getCheck(ctx context.Context, d *plugin.QueryData, h *plugin.HydrateData) (
 		plugin.Logger(ctx).Error("freshping_check.getCheck", "connection_error", err)
 		return nil, err
 	}
-	id := d.KeyColumnQuals["id"].GetInt64Value()
+	id := d.EqualsQuals["id"].GetInt64Value()
 	check, err := client.GetCheck(id)
 	if err != nil {
 		plugin.Logger(ctx).Error("freshping_check.getCheck", err)
