@@ -55,12 +55,12 @@ func listUser(ctx context.Context, d *plugin.QueryData, _ *plugin.HydrateData) (
 		plugin.Logger(ctx).Error("freshping_user.listUser", "connection_error", err)
 		return nil, err
 	}
-	users, err := client.GetUsers()
+	res, err := client.GetUsers()
 	if err != nil {
 		plugin.Logger(ctx).Error("freshping_user.listUser", err)
 		return nil, err
 	}
-	for _, user := range users {
+	for _, user := range res.Users {
 		d.StreamListItem(ctx, user)
 	}
 	return nil, nil

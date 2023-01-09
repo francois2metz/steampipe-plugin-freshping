@@ -34,7 +34,8 @@ type Check struct {
 }
 
 type UserListResponse struct {
-	Users []User `json:"users"`
+	Users    []User    `json:"users"`
+	Contacts []Contact `json:"contacts"`
 }
 
 type User struct {
@@ -44,6 +45,12 @@ type User struct {
 	Role                      string `json:"role"`
 	DisableWeeklyReportEmails bool   `json:"disable_weekly_report_emails"`
 	DisableAlertEmails        bool   `json:"disable_alert_emails"`
+}
+
+type Contact struct {
+	ID    int    `json:"id"`
+	Name  string `json:"name"`
+	Email string `json:"email"`
 }
 
 type ClientOption func(c *Client)
@@ -101,7 +108,7 @@ func (c *Client) GetCheck(id int64) (*Check, error) {
 	return &check, nil
 }
 
-func (c *Client) GetUsers() ([]User, error) {
+func (c *Client) GetUsers() (*UserListResponse, error) {
 	res, err := c.r().Get("/api/v1/users/")
 
 	if err != nil {
@@ -118,7 +125,7 @@ func (c *Client) GetUsers() ([]User, error) {
 		return nil, fmt.Errorf("error unmarshalling JSON: %q", err)
 	}
 
-	return response.Users, nil
+	return &response, nil
 }
 
 func (c *Client) r() *req.Request {

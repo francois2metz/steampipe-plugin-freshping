@@ -16,8 +16,9 @@ func Plugin(ctx context.Context) *plugin.Plugin {
 			Schema:      ConfigSchema,
 		},
 		TableMap: map[string]*plugin.Table{
-			"freshping_check": tableFreshpingCheck(),
-			"freshping_user":  tableFreshpingUser(),
+			"freshping_check":   tableFreshpingCheck(),
+			"freshping_contact": tableFreshpingContact(),
+			"freshping_user":    tableFreshpingUser(),
 		},
 	}
 	return p
