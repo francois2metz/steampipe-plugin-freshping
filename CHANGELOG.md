@@ -1,3 +1,11 @@
+## v0.2.0 [2023-01-09]
+
+_What's new?_
+
+- Add *freshping_contact* table
+- Add *alert_users* and *alert_contacts* columns to the freshping_check table
+- Update SDK to 5.0.2
+
 ## v0.1.0 [2022-09-01]
 
 _What's new?_
