@@ -6,12 +6,12 @@ import (
 )
 
 type freshpingConfig struct {
-	Key       *string `cty:"key"`
+	APIKey       *string `cty:"api_key"`
 	Subdomain *string `cty:"subdomain"`
 }
 
 var ConfigSchema = map[string]*schema.Attribute{
-	"key": {
+	"api_key": {
 		Type: schema.TypeString,
 	},
 	"subdomain": {

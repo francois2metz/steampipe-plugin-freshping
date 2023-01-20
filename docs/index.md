@@ -64,7 +64,7 @@ connection "freshping" {
     # 2. Go to settings > Account settings
     # 3. Copy API Key
     # See https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation#Authentication
-    # key = "NoalNogitnazud1GranfairkyefAymvu"
+    # api_key = "NoalNogitnazud1GranfairkyefAymvu"
 
     # Your freshping subdomain
     # subdomain = ""
@@ -73,7 +73,7 @@ connection "freshping" {
 
 You can also use environment variables:
 
-- `FRESHPING_KEY` for the API KEY
+- `FRESHPING_API_KEY` for the API KEY
 - `FRESHPING_SUBDOMAIN` for the subdomain
 
 ## Get Involved
