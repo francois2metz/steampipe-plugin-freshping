@@ -24,7 +24,7 @@ select
   name,
   url
 from
-  freshping_check
+  freshping_check;
 ```
 
 ```

@@ -26,7 +26,7 @@ select
 from
   freshping_check
 where
-  status not in ('AV', 'PS')
+  status not in ('AV', 'PS');
 ```
 
 ### List checks with degraded performance
@@ -40,5 +40,5 @@ select
 from
   freshping_check
 where
-  performance_status='DP'
+  performance_status='DP';
 ```
