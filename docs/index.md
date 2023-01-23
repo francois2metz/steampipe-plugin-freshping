@@ -50,6 +50,15 @@ Download and install the latest Freshping plugin:
 steampipe plugin install francois2metz/freshping
 ```
 
+### Credentials
+
+| Item        | Description                                                                                                                                                                       |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Credentials | Freshping requires an [API key](https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation#Authentication).                               |
+| Permissions | API tokens can create, update, delete and list checks                                                                                                                             |
+| Radius      | Each connection represents a single freshping account.                                                                                                                            |
+| Resolution  | 1. Credentials explicitly set in a steampipe config file (`~/.steampipe/config/freshping.spc`)<br />2. Credentials specified in environment variables, e.g., `FRESHPING_API_KEY`. |
+
 ### Configuration
 
 Installing the latest freshping plugin will create a config file (`~/.steampipe/config/freshping.spc`) with a single connection named `freshping`:
@@ -71,13 +80,16 @@ connection "freshping" {
     # This can also be set via the `FRESHPING_SUBDOMAIN` environment variable.
     # subdomain = ""
 }
-
 ```
 
-You can also use environment variables:
+### Credentials from Environment Variables
 
-- `FRESHPING_API_KEY` for the API KEY
-- `FRESHPING_SUBDOMAIN` for the subdomain
+The Freshping plugin will use the following environment variables to obtain credentials **only if other arguments (`api_key` or `suddomain`) are not specified** in the connection:
+
+```sh
+export FRESHPING_API_KEY=NoalNogitnazud1GranfairkyefAymvu
+export FRESHPING_SUBDOMAIN=acme
+```
 
 ## Get Involved
 
