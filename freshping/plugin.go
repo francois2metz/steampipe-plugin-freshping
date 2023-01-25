@@ -15,6 +15,7 @@ func Plugin(ctx context.Context) *plugin.Plugin {
 			NewInstance: ConfigInstance,
 			Schema:      ConfigSchema,
 		},
+		DefaultRetryConfig: &plugin.RetryConfig{ShouldRetryErrorFunc: shouldRetryError()},
 		TableMap: map[string]*plugin.Table{
 			"freshping_check":   tableFreshpingCheck(),
 			"freshping_contact": tableFreshpingContact(),
