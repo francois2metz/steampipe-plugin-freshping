@@ -6,7 +6,7 @@ import (
 )
 
 type freshpingConfig struct {
-	APIKey       *string `cty:"api_key"`
+	APIKey    *string `cty:"api_key"`
 	Subdomain *string `cty:"subdomain"`
 }
 
