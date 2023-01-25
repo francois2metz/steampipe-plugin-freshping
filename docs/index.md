@@ -55,7 +55,7 @@ steampipe plugin install francois2metz/freshping
 | Item        | Description                                                                                                                                                                       |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Credentials | Freshping requires an [API key](https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation#Authentication).                               |
-| Permissions | API tokens can create, update, delete and list checks                                                                                                                             |
+| Permissions | API tokens can create, update, delete and list checks.                                                                                                                             |
 | Radius      | Each connection represents a single freshping account.                                                                                                                            |
 | Resolution  | 1. Credentials explicitly set in a steampipe config file (`~/.steampipe/config/freshping.spc`)<br />2. Credentials specified in environment variables, e.g., `FRESHPING_API_KEY`. |
 
