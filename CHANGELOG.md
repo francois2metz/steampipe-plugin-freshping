@@ -1,3 +1,14 @@
+## v0.3.0 [2023-01-25]
+
+_What's new?_
+
+- **Breaking Changes**
+  - The configuration has been updated from `key` to `api_key`
+  - The environment variable `FRESHPING_KEY` has been renamed to `FRESHPING_API_KEY`
+- The requests are retried in case of rate limiting
+- Update SDK to 5.1.2
+- Documentation updates
+
 ## v0.2.1 [2023-01-09]
 
 _What's new?_
