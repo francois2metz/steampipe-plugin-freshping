@@ -2,7 +2,7 @@
 
 # Freshping plugin for Steampipe
 
-Use SQL to query checks and users from [Freshping][].
+Use SQL to query checks, users and contacts from [Freshping][].
 
 - **[Get started →](docs/index.md)**
 - Documentation: [Table definitions & examples](docs/tables)
