@@ -1,3 +1,5 @@
+![Steampipe + Freshping](docs/freshping-social-graphic.png)
+
 # Freshping plugin for Steampipe
 
 Use SQL to query checks and users from [Freshping][].
