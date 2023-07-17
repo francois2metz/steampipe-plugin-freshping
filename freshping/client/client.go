@@ -75,7 +75,7 @@ func (c *Client) GetChecks() ([]Check, error) {
 		return nil, fmt.Errorf("error retrieving checks: %q", err)
 	}
 
-	if !res.IsSuccess() {
+	if !res.IsSuccessState() {
 		return nil, fmt.Errorf("error retrieving checks: %q", res.Status)
 	}
 	var response CheckListResponse
@@ -95,7 +95,7 @@ func (c *Client) GetCheck(id int64) (*Check, error) {
 		return nil, fmt.Errorf("error retrieving check: %q", err)
 	}
 
-	if !res.IsSuccess() {
+	if !res.IsSuccessState() {
 		return nil, fmt.Errorf("error retrieving check: %q", res.Status)
 	}
 	var check Check
@@ -115,7 +115,7 @@ func (c *Client) GetUsers() (*UserListResponse, error) {
 		return nil, fmt.Errorf("error retrieving users: %q", err)
 	}
 
-	if !res.IsSuccess() {
+	if !res.IsSuccessState() {
 		return nil, fmt.Errorf("error retrieving users: %q", res.Status)
 	}
 	var response UserListResponse
