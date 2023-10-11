@@ -1,3 +1,11 @@
+## v0.3.2 [2023-10-12]
+
+_What's new?_
+
+- Update SDK to 5.6.2
+- Update imroc/req to 3.42.1
+- Update go to 1.21
+
 ## v0.3.1 [2023-07-17]
 
 _What's new?_
