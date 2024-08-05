@@ -6,7 +6,7 @@ toolchain go1.21.3
 
 require (
 	github.com/imroc/req/v3 v3.43.7
-	github.com/turbot/steampipe-plugin-sdk/v5 v5.10.1
+	github.com/turbot/steampipe-plugin-sdk/v5 v5.10.2
 )
 
 require (
