@@ -4,7 +4,7 @@ go 1.22.6
 
 require (
 	github.com/imroc/req/v3 v3.49.1
-	github.com/turbot/steampipe-plugin-sdk/v5 v5.11.0
+	github.com/turbot/steampipe-plugin-sdk/v5 v5.11.1
 )
 
 require (
