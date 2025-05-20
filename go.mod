@@ -3,7 +3,7 @@ module github.com/francois2metz/steampipe-plugin-freshping
 go 1.23.6
 
 require (
-	github.com/imroc/req/v3 v3.51.0
+	github.com/imroc/req/v3 v3.52.0
 	github.com/turbot/steampipe-plugin-sdk/v5 v5.11.5
 )
 
@@ -60,6 +60,7 @@ require (
 	github.com/hashicorp/hcl/v2 v2.20.1 // indirect
 	github.com/hashicorp/yamux v0.1.1 // indirect
 	github.com/iancoleman/strcase v0.3.0 // indirect
+	github.com/icholy/digest v1.1.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
