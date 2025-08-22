@@ -888,8 +888,8 @@ github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:
 github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/icholy/digest v1.1.0 h1:HfGg9Irj7i+IX1o1QAmPfIBNu/Q5A5Tu3n/MED9k9H4=
 github.com/icholy/digest v1.1.0/go.mod h1:QNrsSGQ5v7v9cReDI0+eyjsXGUoRSUZQHeQ5C4XLa0Y=
-github.com/imroc/req/v3 v3.54.0 h1:kwWJSpT7OvjJ/Q8ykp+69Ye5H486RKDcgEoepw1Ren4=
-github.com/imroc/req/v3 v3.54.0/go.mod h1:P8gCJjG/XNUFeP6WOi40VAXfYwT+uPM00xvoBWiwzUQ=
+github.com/imroc/req/v3 v3.54.1 h1:JfUPNQV9BaN33RSln4kRoQ+GAFniwq4LUsRKsPEz9ng=
+github.com/imroc/req/v3 v3.54.1/go.mod h1:P8gCJjG/XNUFeP6WOi40VAXfYwT+uPM00xvoBWiwzUQ=
 github.com/jhump/protoreflect v1.15.1 h1:HUMERORf3I3ZdX05WaQ6MIpd/NJ434hTp5YiKgfCL6c=
 github.com/jhump/protoreflect v1.15.1/go.mod h1:jD/2GMKKE6OqX8qTjhADU1e6DShO+gavG9e0Q693nKo=
 github.com/jmespath/go-jmespath v0.4.0 h1:BEgLn5cpjn8UN1mAw4NjwDrS35OdebyEtFe+9YPoQUg=
