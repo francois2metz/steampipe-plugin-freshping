@@ -1,9 +1,11 @@
 module github.com/francois2metz/steampipe-plugin-freshping
 
-go 1.24
+go 1.24.0
+
+toolchain go1.24.10
 
 require (
-	github.com/imroc/req/v3 v3.55.0
+	github.com/imroc/req/v3 v3.56.0
 	github.com/turbot/steampipe-plugin-sdk/v5 v5.13.1
 )
 
@@ -23,7 +25,6 @@ require (
 	github.com/btubbs/datetime v0.1.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
@@ -59,7 +60,7 @@ require (
 	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/icholy/digest v1.1.0 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
-	github.com/klauspost/compress v1.18.0 // indirect
+	github.com/klauspost/compress v1.18.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
@@ -76,8 +77,8 @@ require (
 	github.com/prometheus/common v0.48.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
-	github.com/quic-go/quic-go v0.54.1 // indirect
-	github.com/refraction-networking/utls v1.7.3 // indirect
+	github.com/quic-go/quic-go v0.56.0 // indirect
+	github.com/refraction-networking/utls v1.8.1 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/sethvargo/go-retry v0.2.4 // indirect
 	github.com/stevenle/topsort v0.2.0 // indirect
@@ -98,17 +99,16 @@ require (
 	go.opentelemetry.io/otel/sdk/metric v1.26.0 // indirect
 	go.opentelemetry.io/otel/trace v1.26.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.2.0 // indirect
-	go.uber.org/mock v0.5.2 // indirect
-	golang.org/x/crypto v0.39.0 // indirect
+	golang.org/x/crypto v0.44.0 // indirect
 	golang.org/x/exp v0.0.0-20241215155358-4a5509556b9e // indirect
-	golang.org/x/mod v0.25.0 // indirect
-	golang.org/x/net v0.41.0 // indirect
+	golang.org/x/mod v0.29.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
 	golang.org/x/oauth2 v0.27.0 // indirect
-	golang.org/x/sync v0.15.0 // indirect
-	golang.org/x/sys v0.33.0 // indirect
-	golang.org/x/text v0.26.0 // indirect
-	golang.org/x/time v0.5.0 // indirect
-	golang.org/x/tools v0.34.0 // indirect
+	golang.org/x/sync v0.18.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
+	golang.org/x/time v0.12.0 // indirect
+	golang.org/x/tools v0.38.0 // indirect
 	google.golang.org/api v0.171.0 // indirect
 	google.golang.org/genproto v0.0.0-20240227224415-6ceb2ff114de // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240604185151-ef581f913117 // indirect
