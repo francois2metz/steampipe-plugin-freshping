@@ -2,7 +2,7 @@ module github.com/francois2metz/steampipe-plugin-freshping
 
 go 1.24.0
 
-toolchain go1.24.10
+toolchain go1.25.5
 
 require (
 	github.com/imroc/req/v3 v3.57.0
